@@ -1,21 +1,88 @@
 /* Colors */
 /* Typography */
-/* Global */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Index */
-#landing-img {
-  width: 100vw;
-  height: 100vh;
-  /* if you don't want it to take up the full screen, reduce this number */
-  background-size: cover;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.65) 100%), url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80) no-repeat center center scroll;
+.title {
+  font-size: 3vw;
 }
 
 /* Main */
+#parallax {
+  background: url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80) no-repeat center center scroll;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.col-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col-footer img {
+  margin: 1rem;
+  width: 60px;
+}
+
+#menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+}
+
+.tab button {
+  background: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background: #ddd;
+}
+
+.tab button:active {
+  background: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tabcontent .menu-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabcontent .menu-divider {
+  width: 5px;
+  height: 100%;
+  background: #1c1c1c;
+}
+
+/* Media Queries */
+@media (min-width: 375px) {
+  background-attachment: scroll;
+}
 /*# sourceMappingURL=styles.css.map */

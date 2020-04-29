@@ -1,19 +1,67 @@
 /* Colors */
-
+$lgreen: #AFCC6F;
+$dgreen: #88AF7F;
+$pgreen: #C3D5C9;
 /* Typography */
-
-/* Global */
-*{
-    margin: 0; padding: 0; box-sizing: border-box;
+.title{
+    font-size: 3vw;
 }
+.btn{
 
-/* Index */
-#landing-img{
-    width: 100vw;
-    height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
-    background-size: cover;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80) no-repeat center center scroll; 
 }
 
 /* Main */
+#parallax{
+    background:url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80) no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.col-footer{
+    display: flex;
+    justify-content: center;
+    img{
+        margin: 1rem;
+        width: 60px;
+    }
+}
+#menu{flex-direction: column;justify-content:center;}
+.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    button{
+        background: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    button:hover{
+        background: #ddd;
+    }
+    button:active{
+        background: #ccc;
+    }
+}
+.tabcontent{
+    display: none;
+    padding: 6px 12px;
+    border:1px solid #ccc;
+    border-top: none;
+    justify-content: space-around;
+    .menu-about{
+        display: flex;
+    }
+    .menu-divider{
+        width:5px;
+        height:100%;
+        background: #1c1c1c;
+    }
+}
 
+/* Media Queries */
+@media(min-width:375px){
+    background-attachment: scroll;
+}

@@ -1,0 +1,13 @@
+Title: 
+
+Colours Used: (format shown below) 
+Primary    $colourName: #HEXCODE
+Secondary  $colourName: #HEXCODE
+Others     $colourName: #HEXCODE
+
+Fonts Used:
+Headings    $fontName
+Subheadings $fontName
+Main Body   $fontName
+
+Other Notes:
