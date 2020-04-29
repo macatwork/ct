@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>CT</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;}html, body{height:100%;}html{font-size: 100%;}section{height:100vh;display:flex;justify-content:space-around;align-items:center;}
+        *{margin:0;padding:0;box-sizing:border-box;}html, body{height:100%;}html{font-size: 16px;}section{height:100vh;display:flex;justify-content:space-around;align-items:center;}
         nav{width:100vw;display:flex;justify-content:space-around;align-items:center;background:#000;}.navigation{list-style:none;}.navigation a{text-decoration:none;color:#fff;}.navigation li{display:inline;margin-right:1rem;}
         .title{font-size:3vw;}.col-left{display:flex;flex-direction:column;max-width:40%;margin:0;}.col-right{display:flex;flex-direction:column;max-width:40%;margin:0;}.img-grid{display:flex;flex-wrap:wrap;max-width: 600px;}.img-grid img{margin: 1px;}
     </style>
@@ -465,7 +465,7 @@
         </div>
     </section>
     <section id="book">
-    <div class="booking-container">
+    <div class="container">
         <h2>Feeling hungry yet?</h2>
         <h2>We take bookings!</h2>
         <button class="btn">Book a table</button>
@@ -473,6 +473,7 @@
     </div>
     </section>
     <section id="times">
+    <div class="container">
         <h1 class="title">Opening Times</h1>
         <img src="" alt="" id="clock-icon">
         <ul class="times">
@@ -484,9 +485,11 @@
             <li>Saturday: 8:30am to 9pm</li>
             <li>Sunday: 10am to 6pm</li>
         </ul>
+    </div>
     </section>
     <section id="contact">
         <div class="container">
+        <div class="card">
             <h3>Call Us:</h3>
             <span>0000 000 009</span>
             <h3>Follow Us:</h3>
@@ -500,16 +503,24 @@
             <p>## Address Place, City</p>
             <p>PO57 CDE</p>
         </div>
+    </div>
     </section>
-    <div id="map"></div>
-    <div id="form">
+    <div id="map">
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cafe%20thrive&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org">embedgooglemap.org</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="card">
         <form action="">
             <input type="text" placeholder="Name">
             <input type="email" placeholder="E-mail Address">
             <input type="text" placeholder="Phone Number">
-            <input type="text" placeholder="Write Message">
+            <input type="textarea" placeholder="Write Message">
             <input type="submit" class="btnsml" value="Send Message">
         </form>
+    </div>
+    </div>
     </div>
     <footer>
         <div class="f-left">

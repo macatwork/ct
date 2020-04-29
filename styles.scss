@@ -7,12 +7,48 @@ $pgreen: #C3D5C9;
     font-size: 3vw;
 }
 .btn{
-
+    width: 120px;
+    height: 40px;
+    background: $dgreen;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background: $pgreen;
+   
 }
 .btnsml{
-
+    width: 120px;
+    height: 40px;
+    background: $dgreen;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
-
+.btnsml:hover{
+    background: $pgreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.card{
+    width: 500px;
+    height: 270px;
+    background: $lgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* Main */
 #parallax{
     background:url(https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80) no-repeat center center scroll;
@@ -69,7 +105,7 @@ $pgreen: #C3D5C9;
 }
 
 /* Book */
-.booking-container{
+#book .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +113,42 @@ $pgreen: #C3D5C9;
     h2, button, span{margin: 1rem;}
 }
 
+/* Times */
+#times .container{
+    h1, img, ul{
+        margin: 1rem;
+    }
+    ul{
+        list-style: none;
+    }
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        margin: .7rem;
+        text-align: center;
+        border: none;
+        background: transparent;
+        color: #fff;
+    }
+    input:focus{
+        outline: none;
+        border-bottom: 1px solid #fff;
+    }
+    ::placeholder{
+        color: #fff;
+    }
+}
+
 /* Media Queries */
 @media(min-width:375px){
-    background-attachment: scroll;
+    .parralax{background-attachment: scroll;}
+    html {font-size: calc(16px + 6 * ((100vw - 320px) / 680));}
 }
+  @media screen and (min-width: 1000px) {
+    html {font-size: 22px;}
+  }
