@@ -1,7 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 /* Colors */
 $lgreen: #AFCC6F;
 $dgreen: #88AF7F;
 $pgreen: #C3D5C9;
+/* Section Background Colours */
+#about, #menu, #book, #contact, #map, #form{background: $dgreen;}
+#coffee, #food, #times{background: $lgreen;}
 /* Typography */
 .title{
     font-size: 3vw;
@@ -9,7 +14,7 @@ $pgreen: #C3D5C9;
 .btn{
     width: 120px;
     height: 40px;
-    background: $dgreen;
+    background: $lgreen;
     border-radius: 10px;
     border: none;
     outline: 0;
@@ -23,7 +28,7 @@ $pgreen: #C3D5C9;
 .btnsml{
     width: 120px;
     height: 40px;
-    background: $dgreen;
+    background: $lgreen;
     border-radius: 10px;
     border: none;
     outline: 0;
@@ -39,15 +44,24 @@ $pgreen: #C3D5C9;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    height: 60%;
+    margin: auto;
 }
 .card{
-    width: 500px;
-    height: 270px;
+    width: 50vw;
+    height: 40vh;
     background: $lgreen;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+/* Extra Typography */
+#book h1{font-size: 4vw;}
+/* Section Heights */
+#contact{
+    height: auto;
+    flex-direction: column;
 }
 /* Main */
 #parallax{
@@ -67,43 +81,59 @@ $pgreen: #C3D5C9;
 }
 
 /* Menu */
-#menu{flex-direction: column;justify-content:center;}
-.tab{
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background: #f1f1f1;
-    button{
-        background: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-    }
-    button:hover{
-        background: #ddd;
-    }
-    button:active{
-        background: #ccc;
-    }
-}
-.tabcontent{
-    display: none;
-    padding: 6px 12px;
-    border:1px solid #ccc;
-    border-top: none;
-    justify-content: space-around;
-    .menu-about{
-        display: flex;
-    }
-    .menu-divider{
-        width:5px;
-        height:100%;
-        background: #1c1c1c;
-    }
-}
+#menu{height:100vh;display: block;}
 
+input { display: none; }                /* hide radio buttons */
+input + label { display: inline-block } /* show labels in line */
+input ~ .tab { display: none }          /* hide contents */
+/* show contents only for selected tab */
+#tab1:checked ~ .tab.content1,
+#tab2:checked ~ .tab.content2,
+#tab3:checked ~ .tab.content3,
+#tab4:checked ~ .tab.content4,
+#tab5:checked ~ .tab.content5, 
+#tab6:checked ~ .tab.content6,
+#tab7:checked ~ .tab.content7 { display: block; }
+input + label {             /* box with rounded corner */
+    border: 1px solid #999;
+    background: $lgreen;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+  }
+  input:hover + label{
+      background: $pgreen;
+  }
+  input:checked + label {     /* white background for selected tab */
+    background: $pgreen;
+    border-bottom: 1px solid transparent;
+  }
+  input ~ .tab {          /* grey line between tab and contents */
+    border-top: 1px solid #999;
+    padding: 12px;
+  }
+  .menu-container{
+      display: flex;
+      justify-content: space-evenly;
+      .menu-item{
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+      }
+      .menu-extra{
+          border: 1px dashed $lgreen;
+          border-radius: 10px;
+          padding: 1rem;
+      }
+  }
+  .menu-divider{
+    height: 100%;
+    width: 10px;
+    background: #1c1c1c;
+    z-index: 1;
+}
 /* Book */
 #book .container{
     display: flex;
@@ -162,10 +192,12 @@ footer {
     }
 }
 /* Media Queries */
-@media(min-width:375px){
-    .parralax{background-attachment: scroll;}
-    html {font-size: calc(16px + 6 * ((100vw - 320px) / 680));}
+@media(min-width: 375px){
+    #map{#smlmap{
+        display: block;
+    }
+    #lgmap{
+        display: none;
+    }
 }
-  @media screen and (min-width: 1000px) {
-    html {font-size: 22px;}
-  }
+}

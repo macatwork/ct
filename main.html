@@ -8,567 +8,391 @@
     <link rel="stylesheet" href="styles.css" />
     <title>CT</title>
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;}html, body{height:100%;}html{font-size: 16px;}section{height:100vh;display:flex;justify-content:space-around;align-items:center;}
-        nav{width:100vw;display:flex;justify-content:space-around;align-items:center;background:#000;}.navigation{list-style:none;}.navigation a{text-decoration:none;color:#fff;}.navigation li{display:inline;margin-right:1rem;}
-        .title{font-size:3vw;}.col-left{display:flex;flex-direction:column;max-width:40%;margin:0;}.col-right{display:flex;flex-direction:column;max-width:40%;margin:0;}.img-grid{display:flex;flex-wrap:wrap;max-width: 600px;}.img-grid img{margin: 1px;}
+      @font-face {
+        font-family: Noteworthy;
+        src: url(/assets/Noteworthy.ttf);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        font-family: "Noteworthy";
+        color: #fff;
+      }
+      html {
+        font-size: 20px;
+      }
+      section {
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      header {
+        height: 80px;
+        background: #000;
+        display: flex;
+      }
+      nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #000;
+      }
+      .navigation {
+        list-style: none;
+      }
+      .navigation a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8vw;
+      }
+      .navigation li {
+        display: inline;
+        margin-right: 1rem;
+      }
+      .title {
+        font-size: 3vw;
+      }
+      .col-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30%;
+        width: 40%;
+        margin: 0;
+        text-align: center;
+      }
+      .icon {
+        width: 60px;
+      }
+      .col-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 30%;
+        width: 40%;
+        margin: 0;
+        text-align: center;
+      }
+      .img-grid {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 600px;
+      }
+      .img-grid img {
+        margin: 1px;
+      }
     </style>
   </head>
   <body>
-    <nav>
-      <h1 class="logo" style="color:#fff;">CT</h1>
-      <ul class="navigation">
-        <a href="#About">
-          <li>About Us</li>
-        </a>
-        <a href="#Coffee">
-          <li>Coffee</li>
-        </a>
-        <a href="#Menu">
-          <li>Menu</li>
-        </a>
-        <a href="#Book">
-          <li>Book</li>
-        </a>
-        <a href="#Contact">
-          <li>Conact</li>
-        </a>
-      </ul>
-    </nav>
-    <section id="about"><a name="About"></a>
-        <div class="col-left">
-            <img src="" alt="" id="cake-icon">
-            <h1 class="title">About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quod quasi officiis vel tenetur porro laudantium odio expedita! Sed quisquam repudiandae nam deleniti atque blanditiis delectus unde necessitatibus rerum veritatis?</p>
+    <header>
+      <nav>
+        <h1 class="logo" style="color: #fff;">CT</h1>
+        <ul class="navigation">
+          <a href="#About">
+            <li>About Us</li>
+          </a>
+          <a href="#Coffee">
+            <li>Coffee</li>
+          </a>
+          <a href="#Menu">
+            <li>Menu</li>
+          </a>
+          <a href="#Book">
+            <li>Book</li>
+          </a>
+          <a href="#Contact">
+            <li>Conact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+      <a name="About"></a>
+      <div class="col-left">
+        <img src="/assets/img/icon.png" alt="" class="icon" id="cake-icon" />
+        <h1 class="title">About Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quod
+          quasi officiis vel tenetur porro laudantium odio expedita! Sed
+          quisquam repudiandae nam deleniti atque blanditiis delectus unde
+          necessitatibus rerum veritatis?
+        </p>
+      </div>
+      <div class="col-right">
+        <div class="img-grid">
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
         </div>
-        <div class="col-right">
-            <div class="img-grid">
-                <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> 
-            </div>
-        </div>
+      </div>
     </section>
     <section id="parallax"></section>
     <section id="coffee">
-        <div class="col-left">
-            <div class="col-main">
-                <img src="https://via.placeholder.com/300.png/" alt="">
-            </div>
-            <div class="col-footer">
-                <img src="https://www.lancaster.gov.uk/_images/pageside/1808/FairTrade-Logo.png" alt="FAIRTRADE Logo"><img src="https://ec.europa.eu/info/sites/info/files/styles/teaser_image_breakpoints_theme_europa_mobile_2x/public/food-farming-fisheries/farming/images/eu-organic-logo-600x400.png?itok=9jXbnjlb&timestamp=1561114925" alt="Organic Logo"><img src="data:image/png;base64,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" alt="Rainforest Alliance Logo">
-            </div>
+      <div class="col-left">
+        <div class="col-main">
+          <img src="https://via.placeholder.com/300.png/" alt="" />
         </div>
-        <div class="col-right">
-            <img src="" alt="" id="coffee-icon">
-            <h1 class="title">Our Coffee</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam autem at quam pariatur sunt quibusdam harum saepe iusto sint. Laborum magnam voluptate quae velit minima ab dolorum nesciunt similique.</p>
+        <div class="col-footer">
+          <img
+            src="https://www.lancaster.gov.uk/_images/pageside/1808/FairTrade-Logo.png"
+            alt="FAIRTRADE Logo"
+          /><img
+            src="https://ec.europa.eu/info/sites/info/files/styles/teaser_image_breakpoints_theme_europa_mobile_2x/public/food-farming-fisheries/farming/images/eu-organic-logo-600x400.png?itok=9jXbnjlb&timestamp=1561114925"
+            alt="Organic Logo"
+          /><img
+            src="data:image/png;base64,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"
+            alt="Rainforest Alliance Logo"
+          />
         </div>
+      </div>
+      <div class="col-right">
+        <img src="assets/img/icon.png" alt="" class="icon" id="coffee-icon" />
+        <h1 class="title">Our Coffee</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam
+          autem at quam pariatur sunt quibusdam harum saepe iusto sint. Laborum
+          magnam voluptate quae velit minima ab dolorum nesciunt similique.
+        </p>
+      </div>
     </section>
     <section id="menu">
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'Breakfast')">Breakfast</button>
-          <button class="tablinks" onclick="openCity(event, 'Sandwiches')">Sandwiches</button>
-          <button class="tablinks" onclick="openCity(event, 'Burgers')">Burgers</button>
-          <button class="tablinks" onclick="openCity(event, 'Salad')">Salad</button>
-          <button class="tablinks" onclick="openCity(event, 'Sides')">Sides/Kids</button>
-          <button class="tablinks" onclick="openCity(event, 'Desserts')">Desserts</button>
-          <button class="tablinks" onclick="openCity(event, 'Drinks')">Drinks</button>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <label for="tab1">Tab1</label>
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2">Tab2</label>
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3">Tab3</label>
+      <input type="radio" name="tabs" id="tab4" />
+      <label for="tab4">tab4</label>
+      <input type="radio" name="tabs" id="tab5" />
+      <label for="tab5">tab5</label>
+      <input type="radio" name="tabs" id="tab6" />
+      <label for="tab6">tab6</label>
+      <input type="radio" name="tabs" id="tab7" />
+      <label for="tab7">tab7</label>
+      <div class="tab content1">
+        <div class="tab-title"><h3>Breakfast</h3></div>
+        <div class="menu-container">
+        <div class="col-left">
+          <div class="menu-item">
+            <div class="menu-about">
+              <h5>*Thrive Breakfast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis culpa quis aut. Fugiat magnam ducimus magni! Veritatis voluptas esse sit dolorum provident illo dicta eaque beatae, inventore, vero magni.</p>
+            </div>
+            <div class="price">7.50</div>
+          </div>
+          <div class="menu-extra">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam, nesciunt at voluptatem harum modi provident consectetur aperiam impedit neque ut. Doloribus explicabo officia delectus voluptatum! Recusandae unde voluptate minus?</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-about">
+              <h5>*Thrive Breakfast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis culpa quis aut. Fugiat magnam ducimus magni! Veritatis voluptas esse sit dolorum provident illo dicta eaque beatae, inventore, vero magni.</p>
+            </div>
+            <div class="price">7.50</div>
+          </div>
         </div>
-        <div id="Breakfast" class="tabcontent" style="display:flex;">
-            <h3>Breakfast</h3>
-            <div class="col-left">
-                <div class="menu-item">
-                    <img src="" alt="">
-                    <h5>* Thrive Breakfast</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        <p>7.50</p>
-                    </div>
-                </div>
-                <div class="menu-extra">
-                    <img src="" alt="">
-                    <h5>Breakfast Addons</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="" alt="">
-                    <h5>* Thrive Breakfast</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        <p>7.50</p>
-                    </div>
-                </div>
+        <div class="menu-divider"></div>
+        <div class="col-right">
+          <div class="menu-item">
+            <div class="menu-about">
+              <h5>*Thrive Breakfast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis culpa quis aut. Fugiat magnam ducimus magni! Veritatis voluptas esse sit dolorum provident illo dicta eaque beatae, inventore, vero magni.</p>
             </div>
-            <div class="menu-divider"></div>
-            <div class="col-right">
-                <div class="menu-item">
-                    <img src="" alt="">
-                    <h5>* Thrive Breakfast</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        <p>7.50</p>
-                    </div>
-                </div>
-                <div class="menu-extra">
-                    <img src="" alt="">
-                    <h5>Breakfast Addons</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="" alt="">
-                    <h5>* Thrive Breakfast</h5>
-                    <div class="menu-about">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        <p>7.50</p>
-                    </div>
-                </div>
+            <div class="price">7.50</div>
+          </div>
+          <div class="menu-extra">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laboriosam, nesciunt at voluptatem harum modi provident consectetur aperiam impedit neque ut. Doloribus explicabo officia delectus voluptatum! Recusandae unde voluptate minus?</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-about">
+              <h5>*Thrive Breakfast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis culpa quis aut. Fugiat magnam ducimus magni! Veritatis voluptas esse sit dolorum provident illo dicta eaque beatae, inventore, vero magni.</p>
             </div>
-            </div>
-            <div id="Sandwiches" class="tabcontent" style="display:none;">
-                <h3>Sandwiches</h3>
-                <div class="col-left">
-                    <div class="menu-item">
-                        <img src="" alt="">
-                        <h5>* Thrive Breakfast</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            <p>7.50</p>
-                        </div>
-                    </div>
-                    <div class="menu-extra">
-                        <img src="" alt="">
-                        <h5>Breakfast Addons</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="" alt="">
-                        <h5>* Thrive Breakfast</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            <p>7.50</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-divider"></div>
-                <div class="col-right">
-                    <div class="menu-item">
-                        <img src="" alt="">
-                        <h5>* Thrive Breakfast</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            <p>7.50</p>
-                        </div>
-                    </div>
-                    <div class="menu-extra">
-                        <img src="" alt="">
-                        <h5>Breakfast Addons</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="" alt="">
-                        <h5>* Thrive Breakfast</h5>
-                        <div class="menu-about">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            <p>7.50</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div id="Burgers" class="tabcontent" style="display:none;">
-                    <h3>Burgers</h3>
-                    <div class="col-left">
-                        <div class="menu-item">
-                            <img src="" alt="">
-                            <h5>* Thrive Breakfast</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                <p>7.50</p>
-                            </div>
-                        </div>
-                        <div class="menu-extra">
-                            <img src="" alt="">
-                            <h5>Breakfast Addons</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="" alt="">
-                            <h5>* Thrive Breakfast</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                <p>7.50</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="menu-divider"></div>
-                    <div class="col-right">
-                        <div class="menu-item">
-                            <img src="" alt="">
-                            <h5>* Thrive Breakfast</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                <p>7.50</p>
-                            </div>
-                        </div>
-                        <div class="menu-extra">
-                            <img src="" alt="">
-                            <h5>Breakfast Addons</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="" alt="">
-                            <h5>* Thrive Breakfast</h5>
-                            <div class="menu-about">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                <p>7.50</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="Salad" class="tabcontent" style="display:none;">
-                        <h3>Salad</h3>
-                        <div class="col-left">
-                            <div class="menu-item">
-                                <img src="" alt="">
-                                <h5>* Thrive Breakfast</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    <p>7.50</p>
-                                </div>
-                            </div>
-                            <div class="menu-extra">
-                                <img src="" alt="">
-                                <h5>Breakfast Addons</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img src="" alt="">
-                                <h5>* Thrive Breakfast</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    <p>7.50</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-divider"></div>
-                        <div class="col-right">
-                            <div class="menu-item">
-                                <img src="" alt="">
-                                <h5>* Thrive Breakfast</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    <p>7.50</p>
-                                </div>
-                            </div>
-                            <div class="menu-extra">
-                                <img src="" alt="">
-                                <h5>Breakfast Addons</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                </div>
-                            </div>
-                            <div class="menu-item">
-                                <img src="" alt="">
-                                <h5>* Thrive Breakfast</h5>
-                                <div class="menu-about">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    <p>7.50</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div id="Sides" class="tabcontent" style="display:none;">
-                            <h3>Sides/Kids</h3>
-                            <div class="col-left">
-                                <div class="menu-item">
-                                    <img src="" alt="">
-                                    <h5>* Thrive Breakfast</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        <p>7.50</p>
-                                    </div>
-                                </div>
-                                <div class="menu-extra">
-                                    <img src="" alt="">
-                                    <h5>Breakfast Addons</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <img src="" alt="">
-                                    <h5>* Thrive Breakfast</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        <p>7.50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-divider"></div>
-                            <div class="col-right">
-                                <div class="menu-item">
-                                    <img src="" alt="">
-                                    <h5>* Thrive Breakfast</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        <p>7.50</p>
-                                    </div>
-                                </div>
-                                <div class="menu-extra">
-                                    <img src="" alt="">
-                                    <h5>Breakfast Addons</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <img src="" alt="">
-                                    <h5>* Thrive Breakfast</h5>
-                                    <div class="menu-about">
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        <p>7.50</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div id="Desserts" class="tabcontent" style="display:none;">
-                                <h3>Desserts</h3>
-                                <div class="col-left">
-                                    <div class="menu-item">
-                                        <img src="" alt="">
-                                        <h5>* Thrive Breakfast</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            <p>7.50</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-extra">
-                                        <img src="" alt="">
-                                        <h5>Breakfast Addons</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <img src="" alt="">
-                                        <h5>* Thrive Breakfast</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            <p>7.50</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="menu-divider"></div>
-                                <div class="col-right">
-                                    <div class="menu-item">
-                                        <img src="" alt="">
-                                        <h5>* Thrive Breakfast</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            <p>7.50</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-extra">
-                                        <img src="" alt="">
-                                        <h5>Breakfast Addons</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <img src="" alt="">
-                                        <h5>* Thrive Breakfast</h5>
-                                        <div class="menu-about">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            <p>7.50</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div id="Drinks" class="tabcontent" style="display:none;">
-                                    <h3>Drinks</h3>
-                                    <div class="col-left">
-                                        <div class="menu-item">
-                                            <img src="" alt="">
-                                            <h5>* Thrive Breakfast</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                                <p>7.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="menu-extra">
-                                            <img src="" alt="">
-                                            <h5>Breakfast Addons</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            </div>
-                                        </div>
-                                        <div class="menu-item">
-                                            <img src="" alt="">
-                                            <h5>* Thrive Breakfast</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                                <p>7.50</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menu-divider"></div>
-                                    <div class="col-right">
-                                        <div class="menu-item">
-                                            <img src="" alt="">
-                                            <h5>* Thrive Breakfast</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                                <p>7.50</p>
-                                            </div>
-                                        </div>
-                                        <div class="menu-extra">
-                                            <img src="" alt="">
-                                            <h5>Breakfast Addons</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                            </div>
-                                        </div>
-                                        <div class="menu-item">
-                                            <img src="" alt="">
-                                            <h5>* Thrive Breakfast</h5>
-                                            <div class="menu-about">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis ab itaque obcaecati dolorum reiciendis ducimus veritatis molestiae sed! Vel illum magnam, iure quos id voluptatem accusantium qui? Necessitatibus, dolorem?</p>
-                                                <p>7.50</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
+            <div class="price">7.50</div>
+          </div>
         </div>
+      </div>
+      </div>
+      <div class="tab content2">Tab2 Contents</div>
+      <div class="tab content3">Tab3 Contents</div>
+      <div class="tab content4">Tab4 Contents</div>
+      <div class="tab content5">Tab5 Contents</div>
+      <div class="tab content6">Tab6 Contents</div>
+      <div class="tab content7">Tab7 Contents</div>
     </section>
     <section id="food">
-        <div class="col-left">
-            <img src="" alt="" id="menu-icon">
-            <h1 class="title">Our Food</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae numquam eum dolore, omnis magnam nisi mollitia modi perferendis nam delectus doloribus assumenda minima quis ipsum nihil voluptas veniam pariatur aspernatur.</p>
+      <div class="col-left">
+        <img src="assets/img/icon.png" alt="" class="icon" id="menu-icon" />
+        <h1 class="title">Our Food</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+          numquam eum dolore, omnis magnam nisi mollitia modi perferendis nam
+          delectus doloribus assumenda minima quis ipsum nihil voluptas veniam
+          pariatur aspernatur.
+        </p>
+      </div>
+      <div class="col-right">
+        <div class="img-grid">
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://via.placeholder.com/150" alt="" />
         </div>
-        <div class="col-right">
-            <div class="img-grid">
-                <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> <img src="https://via.placeholder.com/150" alt=""> 
-            </div>
-        </div>
+      </div>
     </section>
     <section id="book">
-    <div class="container">
-        <h2>Feeling hungry yet?</h2>
-        <h2>We take bookings!</h2>
+      <div class="container">
+        <h1>Feeling hungry yet?</h1>
+        <h1>We take bookings!</h1>
         <button class="btn">Book a table</button>
         <span>Please note: we only take evening reservations</span>
-    </div>
+      </div>
     </section>
     <section id="times">
-    <div class="container">
+      <div class="container">
         <h1 class="title">Opening Times</h1>
-        <img src="" alt="" id="clock-icon">
+        <img src="assets/img/icon.png" alt="" class="icon" id="clock-icon" />
         <ul class="times">
-            <li>Monday: 8:30am to 8pm</li>
-            <li>Tuesday: 8:30am to 8pm</li>
-            <li>Wednesday: 8:30am to 8pm</li>
-            <li>Thursday: 8:30am to 8pm</li>
-            <li>Friday: 8:30am to 9pm</li>
-            <li>Saturday: 8:30am to 9pm</li>
-            <li>Sunday: 10am to 6pm</li>
+          <li>Monday: 8:30am to 8pm</li>
+          <li>Tuesday: 8:30am to 8pm</li>
+          <li>Wednesday: 8:30am to 8pm</li>
+          <li>Thursday: 8:30am to 8pm</li>
+          <li>Friday: 8:30am to 9pm</li>
+          <li>Saturday: 8:30am to 9pm</li>
+          <li>Sunday: 10am to 6pm</li>
         </ul>
-    </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="container">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <div class="container">
         <div class="card">
-            <h3>Call Us:</h3>
-            <span>0000 000 009</span>
-            <h3>Follow Us:</h3>
-            <div class="social">
-                <img src="" alt="Facebook Logo">
-                <img src="" alt="Instagram Logo">
-                <img src="" alt="Twitter Logo">
-                <img src="" alt="Email Icon">
-            </div>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>## Address Place, City</p>
-            <p>PO57 CDE</p>
+          <h3>Call Us:</h3>
+          <span>0000 000 009</span>
+          <h3>Follow Us:</h3>
+          <div class="social">
+            <img src="" alt="Facebook Logo" />
+            <img src="" alt="Instagram Logo" />
+            <img src="" alt="Twitter Logo" />
+            <img src="" alt="Email Icon" />
+          </div>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>## Address Place, City</p>
+          <p>PO57 CDE</p>
         </div>
-    </div>
+      </div>
+      <div id="map" class="container">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="800"
+              height="500"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 800px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 800px;
+            }
+          </style>
+        </div>
+      </div>
+      <div id="form" class="container">
+        <div class="card">
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="E-mail Address" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="textarea" placeholder="Write Message" />
+            <input type="submit" class="btnsml" value="Send Message" />
+          </form>
+        </div>
+      </div>
     </section>
-    <div id="map">
-        <div class="container">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cafe%20thrive&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org">embedgooglemap.org</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-        </div>
-    </div>
-    <div class="container">
-    <div class="card">
-        <form action="">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="E-mail Address">
-            <input type="text" placeholder="Phone Number">
-            <input type="textarea" placeholder="Write Message">
-            <input type="submit" class="btnsml" value="Send Message">
-        </form>
-    </div>
-    </div>
-    </div>
     <footer>
-        <div class="f-left">
-            <img src="" alt="" id="f-logo">
-            
-            <p>Address 1st Line</p>
-            <p>Address Line 2</p>
-            <p>City, CN</p>
-            <p>PO57 CD3</p>
-            
-            <span>0000 000 009</span>
+      <div class="f-left">
+        <img src="" alt="" id="f-logo" />
 
-            <span>email@address.co.uk</span>
-        </div>
-        <div class="f-center">
-            <h3>General Links</h3>
-            <ul class="f-links">
-                <a href="">
-                    <li>Blog</li>
-                </a>
-                <a href="">
-                    <li>Privacy Policy</li>
-                </a>
-                <a href="">
-                    <li>Terms & Conditions</li>
-                </a>
-                <a href="">
-                    <li>Frequently Asked Questions</li>
-                </a>
-            </ul>
-        </div>
-        <div class="f-right">
-            <h3>Latest Posts</h3>
-            <ul class="f-links">
-                <a href="">
-                    <li>Post number 1</li>
-                </a>
-                <a href="">
-                    <li>Post number 2</li>
-                </a>
-                <a href="">
-                    <li>Post number 3</li>
-                </a>
-                <a href="">
-                    <li>Post number 4</li>
-                </a>
-            </ul>
-        </div>
+        <p>Address 1st Line</p>
+        <p>Address Line 2</p>
+        <p>City, CN</p>
+        <p>PO57 CD3</p>
+
+        <span>0000 000 009</span>
+
+        <span>email@address.co.uk</span>
+      </div>
+      <div class="f-center">
+        <h3>General Links</h3>
+        <ul class="f-links">
+          <a href="">
+            <li>Blog</li>
+          </a>
+          <a href="">
+            <li>Privacy Policy</li>
+          </a>
+          <a href="">
+            <li>Terms & Conditions</li>
+          </a>
+          <a href="">
+            <li>Frequently Asked Questions</li>
+          </a>
+        </ul>
+      </div>
+      <div class="f-right">
+        <h3>Latest Posts</h3>
+        <ul class="f-links">
+          <a href="">
+            <li>Post number 1</li>
+          </a>
+          <a href="">
+            <li>Post number 2</li>
+          </a>
+          <a href="">
+            <li>Post number 3</li>
+          </a>
+          <a href="">
+            <li>Post number 4</li>
+          </a>
+        </ul>
+      </div>
     </footer>
   </body>
   <script src="main.js"></script>
